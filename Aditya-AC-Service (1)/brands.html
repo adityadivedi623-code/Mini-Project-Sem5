@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Brands | Aditya AC Service</title>
+    <meta
+      name="description"
+      content="Explore AC servicing, repair, installation, maintenance plans and product guidance with Aditya AC Service."
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="assistant.css" />
+    <script defer src="assistant.js"></script>
+  </head>
+  <body>
+    <div class="topbar">
+      A cooler home starts with better AC care.
+      <a href="contact.html">Plan your next service</a>
+    </div>
+    <!-- Shared company header and navigation. -->
+    <header>
+      <div class="wrap nav">
+        <a class="logo" href="index.html"
+          ><span>❄</span>Aditya AC Service<span class="logodot">.</span></a
+        ><button
+          class="menutoggle"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <nav aria-label="Main navigation">
+          <a class="" href="index.html">Home</a
+          ><a class="" href="about.html">About us</a
+          ><a class="" href="products.html">Products</a
+          ><a class="" href="services.html">Services</a
+          ><a class="current" href="brands.html" aria-current="page">Brands</a
+          ><a class="" href="contact.html">Contact</a>
+        </nav>
+        <a class="button navcta" href="contact.html">Request service</a>
+      </div>
+    </header>
+    <!-- Page-specific content begins here. -->
+    <main>
+      <section class="pagehead wrap">
+        <span class="eyebrow">BRAND GUIDE</span>
+        <h1>Explore familiar AC brands.</h1>
+        <p>
+          Compare the right system for your room and budget. Brand names below
+          are examples for product inquiries; they do not imply authorized
+          dealership or partnership.
+        </p>
+      </section>
+      <section class="wrap section compact">
+        <img
+          class="brand-scene"
+          src="hero.webp"
+          alt="Living room with a wall-mounted air conditioner"
+          loading="lazy"
+          width="1100"
+          height="300"
+        />
+        <div class="brands">
+          <article class="brand">
+            <h2>Daikin</h2>
+            <p>
+              Ask about model availability, installation requirements and
+              manufacturer warranty.
+            </p>
+            <a class="textlink" href="contact.html?brand=Daikin"
+              >Enquire about Daikin ↗</a
+            >
+          </article>
+          <article class="brand">
+            <h2>LG</h2>
+            <p>
+              Ask about model availability, installation requirements and
+              manufacturer warranty.
+            </p>
+            <a class="textlink" href="contact.html?brand=LG"
+              >Enquire about LG ↗</a
+            >
+          </article>
+          <article class="brand">
+            <h2>Voltas</h2>
+            <p>
+              Ask about model availability, installation requirements and
+              manufacturer warranty.
+            </p>
+            <a class="textlink" href="contact.html?brand=Voltas"
+              >Enquire about Voltas ↗</a
+            >
+          </article>
+          <article class="brand">
+            <h2>Blue Star</h2>
+            <p>
+              Ask about model availability, installation requirements and
+              manufacturer warranty.
+            </p>
+            <a class="textlink" href="contact.html?brand=Blue Star"
+              >Enquire about Blue Star ↗</a
+            >
+          </article>
+          <article class="brand">
+            <h2>Samsung</h2>
+            <p>
+              Ask about model availability, installation requirements and
+              manufacturer warranty.
+            </p>
+            <a class="textlink" href="contact.html?brand=Samsung"
+              >Enquire about Samsung ↗</a
+            >
+          </article>
+          <article class="brand">
+            <h2>Carrier</h2>
+            <p>
+              Ask about model availability, installation requirements and
+              manufacturer warranty.
+            </p>
+            <a class="textlink" href="contact.html?brand=Carrier"
+              >Enquire about Carrier ↗</a
+            >
+          </article>
+        </div>
+        <aside class="tip">
+          <h3>Check the details before choosing.</h3>
+          <p>
+            Energy ratings vary by model and label year. Ask for the exact model
+            number, current energy label, written warranty terms and total
+            installation cost.
+          </p>
+        </aside>
+      </section>
+      <section class="cta wrap">
+        <div>
+          <span class="eyebrow">LET’S GET YOUR COMFORT BACK</span>
+          <h2>Tell us what your AC needs.</h2>
+          <p>
+            Describe the issue and prepare a service inquiry in a few simple
+            steps.
+          </p>
+        </div>
+        <a class="button light" href="contact.html">Request a service</a>
+      </section>
+    </main>
+    <!-- Shared footer with links to the other pages. -->
+    <footer>
+      <div class="wrap footergrid">
+        <div>
+          <a class="logo" href="index.html"
+            ><span>❄</span>Aditya AC Service<span class="logodot">.</span></a
+          >
+          <p>AC service, sales & everyday comfort.</p>
+          <small>AC service, repair & installation.</small>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <a class="" href="index.html">Home</a
+          ><a class="" href="about.html">About us</a
+          ><a class="" href="products.html">Products</a
+          ><a class="" href="services.html">Services</a
+          ><a class="current" href="brands.html" aria-current="page">Brands</a
+          ><a class="" href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h3>Cooling care</h3>
+          <a href="services.html">Repair & maintenance</a
+          ><a href="products.html">AC product guide</a
+          ><a href="contact.html">Service inquiry</a>
+        </div>
+      </div>
+      <div class="wrap bottom">
+        <span>© 2026 Aditya AC Service. All rights reserved.</span>
+        <span>Your comfort. Our care.</span>
+      </div>
+    </footer>
+    <!-- Customer helper. Answers come from server.js; no API key is in this page. -->
+    <button
+      id="assistant-toggle"
+      class="button"
+      aria-controls="assistant-panel"
+      aria-expanded="false"
+    >
+      Ask Aditya AC Service
+    </button>
+    <section
+      id="assistant-panel"
+      aria-label="Customer navigation assistant"
+      hidden
+    >
+      <div class="chat-header">
+        <h2>Aditya AC Service assistant</h2>
+        <button id="assistant-close" type="button" aria-label="Close assistant">
+          ×
+        </button>
+      </div>
+      <div id="assistant-mode" role="status">
+        Navigation helper · AI available when configured
+      </div>
+      <div
+        id="assistant-messages"
+        role="log"
+        aria-live="polite"
+        aria-label="Conversation"
+      ></div>
+      <div class="chat-suggestions">
+        <button type="button" data-question="I need AC repair">AC repair</button
+        ><button type="button" data-question="Show AC products">Products</button
+        ><button type="button" data-question="How do I book a service?">
+          Service inquiry
+        </button>
+      </div>
+      <form id="assistant-form">
+        <label class="sr-only" for="assistant-input">Your question</label
+        ><input
+          id="assistant-input"
+          maxlength="500"
+          required
+          placeholder="Ask where to find something…"
+        /><button class="button" type="submit">Send</button>
+      </form>
+    </section>
+  </body>
+</html>

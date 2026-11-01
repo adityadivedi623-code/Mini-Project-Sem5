@@ -1,0 +1,15 @@
+{
+  "name": "aditya-ac-service",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A readable six-page AC company website with a customer navigation assistant",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "check": "node --check server.js && node --check database.js && node --check app.js && node --check assistant.js",
+    "enquiries": "node view-enquiries.js"
+  },
+  "engines": {
+    "node": ">=24 <25"
+  }
+}

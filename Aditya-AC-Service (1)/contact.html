@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Contact | Aditya AC Service</title>
+    <meta
+      name="description"
+      content="Explore AC servicing, repair, installation, maintenance plans and product guidance with Aditya AC Service."
+    />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="app.js"></script>
+    <link rel="stylesheet" href="assistant.css" />
+    <script defer src="assistant.js"></script>
+  </head>
+  <body>
+    <div class="topbar">
+      A cooler home starts with better AC care.
+      <a href="contact.html">Plan your next service</a>
+    </div>
+    <!-- Shared company header and navigation. -->
+    <header>
+      <div class="wrap nav">
+        <a class="logo" href="index.html"
+          ><span>❄</span>Aditya AC Service<span class="logodot">.</span></a
+        ><button
+          class="menutoggle"
+          aria-label="Open navigation"
+          aria-expanded="false"
+        >
+          ☰
+        </button>
+        <nav aria-label="Main navigation">
+          <a class="" href="index.html">Home</a
+          ><a class="" href="about.html">About us</a
+          ><a class="" href="products.html">Products</a
+          ><a class="" href="services.html">Services</a
+          ><a class="" href="brands.html">Brands</a
+          ><a class="current" href="contact.html" aria-current="page"
+            >Contact</a
+          >
+        </nav>
+        <a class="button navcta" href="contact.html">Request service</a>
+      </div>
+    </header>
+    <!-- Page-specific content begins here. -->
+    <main>
+      <section class="pagehead wrap">
+        <span class="eyebrow">SERVICE INQUIRY</span>
+        <h1>Let’s make your space comfortable.</h1>
+        <p>
+          Share a few details to prepare an inquiry. Appointment availability
+          and charges must be confirmed with the service provider.
+        </p>
+      </section>
+      <section class="wrap section compact contactgrid">
+        <form id="inquiry">
+          <h2>What can we help with?</h2>
+          <div class="formgrid">
+            <label
+              >Full name<input
+                name="name"
+                required
+                autocomplete="name"
+                placeholder="Your name"
+                maxlength="80" /></label
+            ><label
+              >Mobile number<input
+                name="phone"
+                type="tel"
+                required
+                autocomplete="tel"
+                pattern="[6-9][0-9]{9}"
+                title="Enter a 10-digit Indian mobile number"
+                placeholder="10-digit mobile number" /></label
+            ><label
+              >Email (optional)<input
+                name="email"
+                type="email"
+                autocomplete="email"
+                placeholder="you@example.com" /></label
+            ><label
+              >Area / locality<input
+                name="area"
+                required
+                placeholder="e.g. Bhandup East"
+                maxlength="100" /></label
+            ><label
+              >Service<select name="service" required>
+                <option value="">Choose a service</option>
+                <option>AC deep cleaning</option>
+                <option>Repair & diagnostics</option>
+                <option>Installation & relocation</option>
+                <option>Gas leak inspection</option>
+                <option>Annual maintenance</option>
+                <option>AC sales consultation</option>
+              </select></label
+            ><label
+              >Preferred date (optional)<input type="date" name="date" /></label
+            ><label
+              >AC type<select name="type">
+                <option>Split AC</option>
+                <option>Window AC</option>
+                <option>Cassette / commercial AC</option>
+                <option>Not sure</option>
+              </select></label
+            ><label
+              >Number of units<input
+                name="units"
+                type="number"
+                min="1"
+                max="100"
+                value="1"
+                required /></label
+            ><label class="full"
+              >Issue / additional details<textarea
+                name="details"
+                rows="4"
+                maxlength="1500"
+                placeholder="Describe the issue, AC brand or product you are interested in."
+              ></textarea>
+            </label>
+          </div>
+          <label class="check"
+            ><input type="checkbox" required /> I understand this prepares an
+            inquiry and does not confirm an appointment. I agree to store my
+            inquiry details on the company server.</label
+          ><button class="button" type="submit">Submit inquiry</button>
+          <p class="muted">
+            Your inquiry is saved on the company server. It does not confirm an
+            appointment or send an email.
+          </p>
+          <p id="inquiry-status" role="status" aria-live="polite"></p>
+          <div id="result" hidden aria-live="polite">
+            <h3>Your inquiry has been received</h3>
+            <p>
+              Download a copy for your records. No appointment has been booked.
+            </p>
+            <pre id="summary"></pre>
+            <button class="button" id="download" type="button">
+              Download inquiry
+            </button>
+          </div>
+        </form>
+        <aside>
+          <div class="contactcard">
+            <span class="eyebrow">BUSINESS INFORMATION</span>
+            <h3>Aditya AC Service</h3>
+            <p>Sample service area<br /><b>Mumbai & Thane</b></p>
+            <p>Sample working hours<br /><b>Monday–Saturday, 9 am–7 pm</b></p>
+            <p>
+              Phone, email and street address<br /><b
+                >To be added by the company</b
+              >
+            </p>
+            <small
+              >This is an academic demonstration. Replace sample business
+              information before using it for real customer inquiries.</small
+            >
+          </div>
+          <div class="tip">
+            <h3>Before the visit</h3>
+            <p>
+              Keep the AC model number handy. Mention leaks, unusual noises or
+              error codes. Do not dismantle the unit yourself.
+            </p>
+          </div>
+        </aside>
+      </section>
+    </main>
+    <!-- Shared footer with links to the other pages. -->
+    <footer>
+      <div class="wrap footergrid">
+        <div>
+          <a class="logo" href="index.html"
+            ><span>❄</span>Aditya AC Service<span class="logodot">.</span></a
+          >
+          <p>AC service, sales & everyday comfort.</p>
+          <small>AC service, repair & installation.</small>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <a class="" href="index.html">Home</a
+          ><a class="" href="about.html">About us</a
+          ><a class="" href="products.html">Products</a
+          ><a class="" href="services.html">Services</a
+          ><a class="" href="brands.html">Brands</a
+          ><a class="current" href="contact.html" aria-current="page"
+            >Contact</a
+          >
+        </div>
+        <div>
+          <h3>Cooling care</h3>
+          <a href="services.html">Repair & maintenance</a
+          ><a href="products.html">AC product guide</a
+          ><a href="contact.html">Service inquiry</a>
+        </div>
+      </div>
+      <div class="wrap bottom">
+        <span>© 2026 Aditya AC Service. All rights reserved.</span>
+        <span>Your comfort. Our care.</span>
+      </div>
+    </footer>
+    <!-- Customer helper. Answers come from server.js; no API key is in this page. -->
+    <button
+      id="assistant-toggle"
+      class="button"
+      aria-controls="assistant-panel"
+      aria-expanded="false"
+    >
+      Ask Aditya AC Service
+    </button>
+    <section
+      id="assistant-panel"
+      aria-label="Customer navigation assistant"
+      hidden
+    >
+      <div class="chat-header">
+        <h2>Aditya AC Service assistant</h2>
+        <button id="assistant-close" type="button" aria-label="Close assistant">
+          ×
+        </button>
+      </div>
+      <div id="assistant-mode" role="status">
+        Navigation helper · AI available when configured
+      </div>
+      <div
+        id="assistant-messages"
+        role="log"
+        aria-live="polite"
+        aria-label="Conversation"
+      ></div>
+      <div class="chat-suggestions">
+        <button type="button" data-question="I need AC repair">AC repair</button
+        ><button type="button" data-question="Show AC products">Products</button
+        ><button type="button" data-question="How do I book a service?">
+          Service inquiry
+        </button>
+      </div>
+      <form id="assistant-form">
+        <label class="sr-only" for="assistant-input">Your question</label
+        ><input
+          id="assistant-input"
+          maxlength="500"
+          required
+          placeholder="Ask where to find something…"
+        /><button class="button" type="submit">Send</button>
+      </form>
+    </section>
+  </body>
+</html>
